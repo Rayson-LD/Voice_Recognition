@@ -55,7 +55,7 @@ class MyFrame(wx.Frame) :
                 print("Could not connect to the inernet; {0}",format(e))
         else :        
             try:
-                app_id="WUGJEJ-2RERJEGKEE"
+                app_id="Place your wolframaplha id here"
                 client=wolframalpha.Client(app_id)
                 res = client.query(input)
                 answer = next(res.results).text
